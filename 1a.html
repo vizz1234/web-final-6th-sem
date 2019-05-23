@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>final 1a</title>
+    <script type="text/javascript">
+    function fixStart(str)
+    {
+        var s=str.charAt(0);
+        var s1=str.split("");
+        for(var i=1;i<s1.length;i++)
+        {
+            if(s1[i]==s)
+            {
+                s1[i]='*';
+            }
+        }
+        alert('string changed to '+ s1.join(''));
+    }
+
+    </script>
+</head>
+<body>
+    <script type="text/javascript">
+        var str=prompt("enter the string");
+        fixStart(str);
+        </script>
+</body>
+</html>
